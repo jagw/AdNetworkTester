@@ -8,14 +8,16 @@
         android:minSdkVersion="8"
         android:targetSdkVersion="19" />
 
-    <uses-feature android:name="android.hardware.microphone" android:required="false" />
-    
+    <uses-feature
+        android:name="android.hardware.microphone"
+        android:required="false" />
+
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-	<uses-permission android:name="android.permission.RECORD_AUDIO" />
-	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
         android:allowBackup="true"
@@ -57,19 +59,45 @@
         </activity>
         
         <activity
+            android:name="co.uk.jagw.adnetworktester.MoPubActivity"
+            android:label="@string/title_activity_mo_pub"
+            android:parentActivityName="co.uk.jagw.adnetworktester.HomeScreen" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="co.uk.jagw.adnetworktester.HomeScreen" />
+        </activity>
+        
+        <activity
             android:name="com.google.ads.AdActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" >
         </activity>
-        <activity 
+        <activity
             android:name="com.millennialmedia.android.MMActivity"
-  			android:theme="@android:style/Theme.Translucent.NoTitleBar" 
-  			android:configChanges="keyboardHidden|orientation|keyboard" >
+            android:configChanges="keyboardHidden|orientation|keyboard"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
         </activity>
-        <activity 
+        <activity
+            android:name="com.millennialmedia.android.VideoPlayer"
+            android:configChanges="keyboardHidden|orientation|keyboard" >
+        </activity>
+        <activity
             android:name="com.inmobi.androidsdk.IMBrowserActivity"
-    		android:configChanges="keyboardHidden|orientation|keyboard|smallestScreenSize|screenSize"
-    		android:hardwareAccelerated="true">
+            android:configChanges="keyboardHidden|orientation|keyboard|smallestScreenSize|screenSize"
+            android:hardwareAccelerated="true" >
         </activity>
+        <activity
+            android:name="com.mopub.mobileads.MoPubActivity"
+            android:configChanges="keyboardHidden|orientation" />
+        <activity
+            android:name="com.mopub.mobileads.MraidActivity"
+            android:configChanges="keyboardHidden|orientation" />
+        <activity
+            android:name="com.mopub.mobileads.MraidBrowser"
+            android:configChanges="keyboardHidden|orientation" />
+        <activity
+            android:name="com.mopub.mobileads.MraidVideoPlayerActivity"
+            android:configChanges="keyboardHidden|orientation" />
+
     </application>
 
 </manifest>

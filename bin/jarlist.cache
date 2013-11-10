@@ -1,3 +1,7 @@
 # cache for current jar dependency. DO NOT EDIT.
 # format is <lastModified> <length> <SHA-1> <path>
 # Encoding is UTF-8
+1376340395000 616771 38b438386a4f96546af4c6242a21ee4411e382ef /Users/jagw/Documents/Code/workspace/AdNetworkTester/libs/MMSDK.jar
+1381917428000 616771 38b438386a4f96546af4c6242a21ee4411e382ef /Users/jagw/Documents/Code/workspace/mopub-sdk/libs/MMSDK.jar
+1381917428000 353210 6262c554ef5744538d526465aa73704810705734 /Users/jagw/Documents/Code/workspace/mopub-sdk/libs/GoogleAdMobAdsSdk-6.4.1.jar
+1384081194000 353210 6262c554ef5744538d526465aa73704810705734 /Users/jagw/Documents/Code/workspace/AdNetworkTester/libs/GoogleAdMobAdsSdk-6.4.1.jar

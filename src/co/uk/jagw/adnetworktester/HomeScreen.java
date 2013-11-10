@@ -64,6 +64,10 @@ public class HomeScreen extends Activity implements OnItemSelectedListener {
 			Intent admobIntent = new Intent(this, AdMobActivity.class);
 			startActivity(admobIntent);
 		}
+		else if(spinnerSelection.equals("MoPub")){			
+			Intent MoPubIntent = new Intent(this, MoPubActivity.class);
+			startActivity(MoPubIntent);
+		}
 		else {
 			// Should never get here, but if we do - just notify the user to reselect the network
 			Toast.makeText(this, "Error: Please reselect network", Toast.LENGTH_SHORT).show();

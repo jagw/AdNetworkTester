@@ -10,11 +10,14 @@ import android.view.MenuItem;
 import android.widget.RelativeLayout;
 
 import com.inmobi.commons.InMobi;
+import com.inmobi.commons.InMobi.LOG_LEVEL;
 import com.inmobi.monetization.IMBanner;
 
 public class InMobiActivity extends Activity {
 	
-	String inmobiBannerAPID = "9e76ed0efa2945cc8d8a7607c2c82539";
+	String inmobiID = "9e76ed0efa2945cc8d8a7607c2c82539";
+	String inmobiBannerAPID = "1384116071313223";
+	String inmobiInterstitialAPID = "1384116081893428";
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -36,7 +39,8 @@ public class InMobiActivity extends Activity {
 	}
 	
 	public void inmobiBanner(){
-		InMobi.initialize(this, inmobiBannerAPID);
+		InMobi.initialize(this, inmobiID);
+		InMobi.setLogLevel(LOG_LEVEL.DEBUG);
 		IMBanner imbanner = new IMBanner(this, inmobiBannerAPID ,IMBanner.INMOBI_AD_UNIT_320X50);
 		final float scale = getResources().getDisplayMetrics().density;
 		int width = (int) (320 * scale + 0.5f);
