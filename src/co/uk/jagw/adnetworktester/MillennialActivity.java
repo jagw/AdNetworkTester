@@ -9,6 +9,7 @@ import android.util.DisplayMetrics;
 import android.util.TypedValue;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.RelativeLayout;
 
 import com.millennialmedia.android.MMAd;
@@ -24,7 +25,7 @@ public class MillennialActivity extends Activity {
 	String millennialRectangleAPID = "141991";
 	String millennialImageInterstitialAPID = "141992";
 	String millennialVideoInterstitialAPID = "141993";
-	String millennialDualInterstitialAPID = "141994";
+	String millennialInterstitialAPID = "141994";
 		
 	int placementWidth = BANNER_AD_WIDTH;
 	int placementHeight = BANNER_AD_HEIGHT;	
@@ -147,7 +148,19 @@ public class MillennialActivity extends Activity {
 		adView.getAd();
 	}
 	
+	public void mmVideo(View view){
+		millennialInterstitial(millennialVideoInterstitialAPID);
+	}
+	public void mmImage(View view){
+		millennialInterstitial(millennialImageInterstitialAPID);
+	}
+	public void mmInterstitial(View view){
+		millennialInterstitial(millennialInterstitialAPID);
+	}
+	
 	public void millennialInterstitial(String apid){
+		MMSDK.initialize(this);
+		MMSDK.setLogLevel(MMSDK.LOG_LEVEL_VERBOSE);
 		final MMInterstitial interstitial = new MMInterstitial(this);
 		//Set your metadata in the MMRequest object
 		MMRequest request = new MMRequest();

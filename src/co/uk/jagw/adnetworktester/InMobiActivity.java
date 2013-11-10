@@ -1,14 +1,20 @@
-package co.uk.jagw.adnetworktester;
+ package co.uk.jagw.adnetworktester;
 
-import android.os.Bundle;
+import android.annotation.TargetApi;
 import android.app.Activity;
+import android.os.Build;
+import android.os.Bundle;
+import android.support.v4.app.NavUtils;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.support.v4.app.NavUtils;
-import android.annotation.TargetApi;
-import android.os.Build;
+import android.widget.RelativeLayout;
+
+import com.inmobi.commons.InMobi;
+import com.inmobi.monetization.IMBanner;
 
 public class InMobiActivity extends Activity {
+	
+	String inmobiBannerAPID = "9e76ed0efa2945cc8d8a7607c2c82539";
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -16,6 +22,7 @@ public class InMobiActivity extends Activity {
 		setContentView(R.layout.activity_in_mobi);
 		// Show the Up button in the action bar.
 		setupActionBar();
+		inmobiBanner();
 	}
 
 	/**
@@ -26,6 +33,17 @@ public class InMobiActivity extends Activity {
 		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
 			getActionBar().setDisplayHomeAsUpEnabled(true);
 		}
+	}
+	
+	public void inmobiBanner(){
+		InMobi.initialize(this, inmobiBannerAPID);
+		IMBanner imbanner = new IMBanner(this, inmobiBannerAPID ,IMBanner.INMOBI_AD_UNIT_320X50);
+		final float scale = getResources().getDisplayMetrics().density;
+		int width = (int) (320 * scale + 0.5f);
+		int height = (int) (50 * scale + 0.5f);
+		imbanner.setLayoutParams(new RelativeLayout.LayoutParams(width, height));
+		RelativeLayout parent = (RelativeLayout)findViewById(R.id.inmobi_main_layout);
+		parent.addView(imbanner);
 	}
 
 	@Override

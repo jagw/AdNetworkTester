@@ -15,6 +15,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
+        android:onClick="mmVideo"
         android:text="@string/mmVideo" />
 
     <Button
@@ -24,6 +25,7 @@
         android:layout_alignBaseline="@+id/callMMVideo"
         android:layout_alignBottom="@+id/callMMVideo"
         android:layout_centerHorizontal="true"
+        android:onClick="mmImage"
         android:text="@string/mmImage" />
 
     <Button
@@ -33,6 +35,7 @@
         android:layout_alignBaseline="@+id/callMMImage"
         android:layout_alignBottom="@+id/callMMImage"
         android:layout_alignParentRight="true"
+        android:onClick="mmInterstitial"
         android:text="@string/mmInterstitial" />
 
 </RelativeLayout>
