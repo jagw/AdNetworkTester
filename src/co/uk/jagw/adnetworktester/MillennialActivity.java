@@ -11,15 +11,17 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.RelativeLayout;
+import android.widget.Toast;
 
 import com.millennialmedia.android.MMAd;
 import com.millennialmedia.android.MMAdView;
+import com.millennialmedia.android.MMException;
 import com.millennialmedia.android.MMInterstitial;
 import com.millennialmedia.android.MMRequest;
 import com.millennialmedia.android.MMSDK;
-import com.millennialmedia.android.RequestListener.RequestListenerImpl;
+import com.millennialmedia.android.RequestListener;
 
-public class MillennialActivity extends Activity {
+public class MillennialActivity extends Activity implements RequestListener {
 
 	String millennialBannerAPID = "141987";
 	String millennialRectangleAPID = "141991";
@@ -27,6 +29,8 @@ public class MillennialActivity extends Activity {
 	String millennialVideoInterstitialAPID = "141993";
 	String millennialInterstitialAPID = "141994";
 		
+	MMInterstitial interstitial;
+	
 	int placementWidth = BANNER_AD_WIDTH;
 	int placementHeight = BANNER_AD_HEIGHT;	
 	
@@ -83,6 +87,7 @@ public class MillennialActivity extends Activity {
 
 		//Add the MMRequest object to your MMAdView.
 		adView.setMMRequest(request);
+		
 
 		//Sets the id to preserve your ad on configuration changes.
 		adView.setId(MMSDK.getDefaultAdId());
@@ -105,8 +110,9 @@ public class MillennialActivity extends Activity {
 
 		//Add the adView to the layout. The layout is assumed to be a RelativeLayout.
 		RelativeLayout layout = (RelativeLayout)findViewById(R.id.millennial_main_layout);
+		
 		layout.addView(adView);
-		adView.getAd();
+		adView.getAd(this);
 	}
 	
 	public void millennialRectangle(){
@@ -144,37 +150,34 @@ public class MillennialActivity extends Activity {
 
 		//Add the adView to the layout. The layout is assumed to be a RelativeLayout.
 		RelativeLayout layout = (RelativeLayout)findViewById(R.id.millennial_main_layout);
+		adView.setListener(this);
 		layout.addView(adView);
+		
 		adView.getAd();
 	}
 	
 	public void mmVideo(View view){
+		Toast.makeText(this, "Calling MMVideo", Toast.LENGTH_SHORT).show();
 		millennialInterstitial(millennialVideoInterstitialAPID);
 	}
 	public void mmImage(View view){
+		Toast.makeText(this, "Calling MMImage", Toast.LENGTH_SHORT).show();
 		millennialInterstitial(millennialImageInterstitialAPID);
 	}
 	public void mmInterstitial(View view){
+		Toast.makeText(this, "Calling Interstitial", Toast.LENGTH_SHORT).show();
 		millennialInterstitial(millennialInterstitialAPID);
 	}
 	
 	public void millennialInterstitial(String apid){
-		MMSDK.initialize(this);
-		MMSDK.setLogLevel(MMSDK.LOG_LEVEL_VERBOSE);
-		final MMInterstitial interstitial = new MMInterstitial(this);
+		interstitial = new MMInterstitial(this);
 		//Set your metadata in the MMRequest object
 		MMRequest request = new MMRequest();
 		//Add the MMRequest object to your MMInterstitial.
 		interstitial.setMMRequest(request);
 		interstitial.setApid(apid);		
-		interstitial.setListener(new RequestListenerImpl() {
-
-			@Override
-
-			public void requestCompleted(MMAd mmAd) {
-			   interstitial.display();
-			}
-			});
+		interstitial.setListener(this);
+		interstitial.fetch();
 	}
 	
 	// MMSDK method - allows does the screen sizing magic.
@@ -206,6 +209,48 @@ public class MillennialActivity extends Activity {
 			return true;
 		}
 		return super.onOptionsItemSelected(item);
+	}
+
+	/*
+	 * Request Listener Override Methods
+	 */
+	
+	@Override
+	public void MMAdOverlayClosed(MMAd arg0) {
+		Toast.makeText(this, "Millennial Ad Overlay Closed", Toast.LENGTH_SHORT).show();
+		
+	}
+
+	@Override
+	public void MMAdOverlayLaunched(MMAd arg0) {
+		Toast.makeText(this, "Millennial Ad Overlay launched", Toast.LENGTH_SHORT).show();
+		
+	}
+
+	@Override
+	public void MMAdRequestIsCaching(MMAd arg0) {
+		Toast.makeText(this, "Millennial Ad Request Caching", Toast.LENGTH_SHORT).show();
+		
+	}
+
+	@Override
+	public void onSingleTap(MMAd arg0) {
+		Toast.makeText(this, "Millennial Ad Tapped", Toast.LENGTH_SHORT).show();
+		
+	}
+
+	@Override
+	public void requestCompleted(MMAd arg0) {
+		Toast.makeText(this, "Millennial Request Completed", Toast.LENGTH_SHORT).show();
+		if(interstitial.isAdAvailable() == true){
+			interstitial.display();
+		}
+		
+	}
+
+	@Override
+	public void requestFailed(MMAd arg0, MMException arg1) {
+		Toast.makeText(this, "Millennial Request Failed", Toast.LENGTH_SHORT).show();
 	}
 
 }

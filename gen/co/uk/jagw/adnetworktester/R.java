@@ -27,17 +27,18 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int action_settings=0x7f09000a;
+        public static final int action_settings=0x7f09000b;
         public static final int admob_main_layout=0x7f090000;
-        public static final int adview=0x7f090009;
-        public static final int callMMImage=0x7f090007;
-        public static final int callMMInterstitial=0x7f090008;
-        public static final int callMMVideo=0x7f090006;
-        public static final int inmobi_main_layout=0x7f090004;
-        public static final int mainLayout=0x7f090001;
-        public static final int millennial_main_layout=0x7f090005;
-        public static final int networkSelect=0x7f090003;
-        public static final int networkSpinner=0x7f090002;
+        public static final int adview=0x7f09000a;
+        public static final int button1=0x7f090001;
+        public static final int callMMImage=0x7f090008;
+        public static final int callMMInterstitial=0x7f090009;
+        public static final int callMMVideo=0x7f090007;
+        public static final int inmobi_main_layout=0x7f090005;
+        public static final int mainLayout=0x7f090002;
+        public static final int millennial_main_layout=0x7f090006;
+        public static final int networkSelect=0x7f090004;
+        public static final int networkSpinner=0x7f090003;
     }
     public static final class layout {
         public static final int activity_admob=0x7f030000;
@@ -55,6 +56,7 @@ public final class R {
     }
     public static final class string {
         public static final int action_settings=0x7f050001;
+        public static final int admob_mediation_button=0x7f05000b;
         public static final int app_name=0x7f050000;
         public static final int hello_world=0x7f050002;
         public static final int mmImage=0x7f050008;

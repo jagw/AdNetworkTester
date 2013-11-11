@@ -20,5 +20,6 @@
     <string name="mmImage">Image</string>
     <string name="mmInterstitial">Interstitital</string>
     <string name="title_activity_mo_pub">MoPub</string>
+    <string name="admob_mediation_button">Mediation</string>
 
 </resources>
