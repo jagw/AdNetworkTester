@@ -1,31 +1,34 @@
- package co.uk.jagw.adnetworktester;
+package co.uk.jagw.ant;
 
-import android.annotation.TargetApi;
-import android.app.Activity;
-import android.os.Build;
 import android.os.Bundle;
-import android.support.v4.app.NavUtils;
+import android.app.Activity;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.RelativeLayout;
+import android.support.v4.app.NavUtils;
+import android.annotation.TargetApi;
+import android.os.Build;
+import com.jirbo.adcolony.*;
 
-import com.inmobi.commons.InMobi;
-import com.inmobi.commons.InMobi.LOG_LEVEL;
-import com.inmobi.monetization.IMBanner;
-
-public class InMobiActivity extends Activity {
+public class AdColonyActivity extends Activity {
 	
-	String inmobiID = "9e76ed0efa2945cc8d8a7607c2c82539";
-	String inmobiBannerAPID = "1384116071313223";
-	String inmobiInterstitialAPID = "1384116081893428";
+	public String adColonyAppID = "app52802a4ae904462291";
+	public String adColonyZoneID = "vz2522446dee0a46a188";
+	public String adColonyV4VC = "v4vcaebb8d5f7f7e4151b5";
+	public String adColonyClientOptions = "version1.0,store:google,skippable";
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_in_mobi);
+		setContentView(R.layout.activity_adcolony);
 		// Show the Up button in the action bar.
 		setupActionBar();
-		inmobiBanner();
+		AdColony.configure(this, adColonyClientOptions, adColonyAppID, adColonyZoneID);
+		callAdColony();
+	}
+	
+	public void callAdColony(){
+		AdColonyVideoAd ad = new AdColonyVideoAd(adColonyZoneID);
+		ad.show();
 	}
 
 	/**
@@ -37,23 +40,11 @@ public class InMobiActivity extends Activity {
 			getActionBar().setDisplayHomeAsUpEnabled(true);
 		}
 	}
-	
-	public void inmobiBanner(){
-		InMobi.initialize(this, inmobiID);
-		InMobi.setLogLevel(LOG_LEVEL.DEBUG);
-		IMBanner imbanner = new IMBanner(this, inmobiBannerAPID ,IMBanner.INMOBI_AD_UNIT_320X50);
-		final float scale = getResources().getDisplayMetrics().density;
-		int width = (int) (320 * scale + 0.5f);
-		int height = (int) (50 * scale + 0.5f);
-		imbanner.setLayoutParams(new RelativeLayout.LayoutParams(width, height));
-		RelativeLayout parent = (RelativeLayout)findViewById(R.id.inmobi_main_layout);
-		parent.addView(imbanner);
-	}
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.in_mobi, menu);
+		getMenuInflater().inflate(R.menu.ad_colony, menu);
 		return true;
 	}
 
@@ -72,6 +63,20 @@ public class InMobiActivity extends Activity {
 			return true;
 		}
 		return super.onOptionsItemSelected(item);
+	}
+	
+	@Override
+	public void onPause() 
+	{
+	  super.onPause();
+	  AdColony.pause(); 
+	}
+
+	@Override
+	public void onResume() 
+	{
+	  super.onResume();
+	  AdColony.resume( this ); 
 	}
 
 }

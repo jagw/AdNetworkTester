@@ -1,4 +1,4 @@
-package co.uk.jagw.adnetworktester;
+package co.uk.jagw.ant;
 
 import android.annotation.TargetApi;
 import android.app.Activity;
@@ -13,6 +13,7 @@ import android.view.View;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
 
+import co.uk.jagw.ant.R;
 import com.millennialmedia.android.MMAd;
 import com.millennialmedia.android.MMAdView;
 import com.millennialmedia.android.MMException;

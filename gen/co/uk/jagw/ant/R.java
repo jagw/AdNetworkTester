@@ -5,7 +5,7 @@
  * should not be modified by hand.
  */
 
-package co.uk.jagw.adnetworktester;
+package co.uk.jagw.ant;
 
 public final class R {
     public static final class array {
@@ -41,18 +41,22 @@ public final class R {
         public static final int networkSpinner=0x7f090003;
     }
     public static final class layout {
-        public static final int activity_admob=0x7f030000;
-        public static final int activity_home_screen=0x7f030001;
-        public static final int activity_in_mobi=0x7f030002;
-        public static final int activity_millennial=0x7f030003;
-        public static final int activity_mopub=0x7f030004;
+        public static final int activity_adcolony=0x7f030000;
+        public static final int activity_admob=0x7f030001;
+        public static final int activity_chartboost=0x7f030002;
+        public static final int activity_home_screen=0x7f030003;
+        public static final int activity_in_mobi=0x7f030004;
+        public static final int activity_millennial=0x7f030005;
+        public static final int activity_mopub=0x7f030006;
     }
     public static final class menu {
-        public static final int ad_mob=0x7f080000;
-        public static final int home_screen=0x7f080001;
-        public static final int in_mobi=0x7f080002;
-        public static final int millennial=0x7f080003;
-        public static final int mo_pub=0x7f080004;
+        public static final int ad_colony=0x7f080000;
+        public static final int ad_mob=0x7f080001;
+        public static final int chartboost=0x7f080002;
+        public static final int home_screen=0x7f080003;
+        public static final int in_mobi=0x7f080004;
+        public static final int millennial=0x7f080005;
+        public static final int mo_pub=0x7f080006;
     }
     public static final class string {
         public static final int action_settings=0x7f050001;
@@ -63,7 +67,9 @@ public final class R {
         public static final int mmInterstitial=0x7f050009;
         public static final int mmVideo=0x7f050007;
         public static final int network_select_button=0x7f050004;
+        public static final int title_activity_ad_colony=0x7f05000d;
         public static final int title_activity_ad_mob=0x7f050003;
+        public static final int title_activity_chartboost=0x7f05000c;
         public static final int title_activity_in_mobi=0x7f050006;
         public static final int title_activity_millennial=0x7f050005;
         public static final int title_activity_mo_pub=0x7f05000a;

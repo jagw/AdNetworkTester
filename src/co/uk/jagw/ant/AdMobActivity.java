@@ -1,4 +1,4 @@
-package co.uk.jagw.adnetworktester;
+package co.uk.jagw.ant;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -6,6 +6,7 @@ import android.view.Menu;
 import android.view.View;
 import android.widget.RelativeLayout;
 
+import co.uk.jagw.ant.R;
 import com.google.ads.AdRequest;
 import com.google.ads.AdSize;
 import com.google.ads.AdView;

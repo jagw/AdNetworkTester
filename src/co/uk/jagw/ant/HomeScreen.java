@@ -1,4 +1,4 @@
-package co.uk.jagw.adnetworktester;
+package co.uk.jagw.ant;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -11,6 +11,7 @@ import android.widget.AdapterView.OnItemSelectedListener;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 import android.widget.Toast;
+import co.uk.jagw.ant.R;
 
 public class HomeScreen extends Activity implements OnItemSelectedListener {
 	
@@ -67,6 +68,14 @@ public class HomeScreen extends Activity implements OnItemSelectedListener {
 		else if(spinnerSelection.equals("MoPub")){			
 			Intent MoPubIntent = new Intent(this, MoPubActivity.class);
 			startActivity(MoPubIntent);
+		}
+		else if(spinnerSelection.equals("Chartboost")){			
+			Intent ChartboostIntent = new Intent(this, ChartboostActivity.class);
+			startActivity(ChartboostIntent);
+		}
+		else if(spinnerSelection.equals("AdColony")){			
+			Intent AdColonyIntent = new Intent(this, AdColonyActivity.class);
+			startActivity(AdColonyIntent);
 		}
 		else {
 			// Should never get here, but if we do - just notify the user to reselect the network

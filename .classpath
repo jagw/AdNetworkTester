@@ -6,9 +6,10 @@
 	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="gen"/>
-	<classpathentry exported="true" kind="lib" path="/Users/jwalters/Documents/workspace/AdNetworkTester/libs/android-support-v4.jar"/>
+	<classpathentry kind="lib" path="/Users/jwalters/Documents/workspace/AdNetworkTester/libs/android-support-v4.jar"/>
 	<classpathentry exported="true" kind="lib" path="/Users/jwalters/Documents/workspace/AdNetworkTester/libs/GoogleAdMobAdsSdk-6.4.1.jar"/>
 	<classpathentry exported="true" kind="lib" path="/Users/jwalters/Documents/workspace/AdNetworkTester/libs/InMobi-4.0.2.jar"/>
 	<classpathentry exported="true" kind="lib" path="/Users/jwalters/Documents/workspace/AdNetworkTester/libs/nmdp_speech_kit.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/chartboost.jar"/>
 	<classpathentry kind="output" path="bin/classes"/>
 </classpath>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="co.uk.jagw.adnetworktester"
+    package="co.uk.jagw.ant"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -21,11 +21,12 @@
 
     <application
         android:allowBackup="true"
+        android:hardwareAccelerated="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="co.uk.jagw.adnetworktester.HomeScreen"
+            android:name="co.uk.jagw.ant.HomeScreen"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -34,39 +35,37 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="co.uk.jagw.adnetworktester.AdMobActivity"
+            android:name="co.uk.jagw.ant.AdMobActivity"
             android:label="@string/title_activity_ad_mob"
-            android:parentActivityName="co.uk.jagw.adnetworktester.HomeScreen" >
+            android:parentActivityName="co.uk.jagw.ant.HomeScreen" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="co.uk.jagw.adnetworktester.HomeScreen" />
         </activity>
         <activity
-            android:name="co.uk.jagw.adnetworktester.MillennialActivity"
+            android:name="co.uk.jagw.ant.MillennialActivity"
             android:label="@string/title_activity_millennial"
-            android:parentActivityName="co.uk.jagw.adnetworktester.HomeScreen" >
+            android:parentActivityName="co.uk.jagw.ant.HomeScreen" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="co.uk.jagw.adnetworktester.HomeScreen" />
         </activity>
         <activity
-            android:name="co.uk.jagw.adnetworktester.InMobiActivity"
+            android:name="co.uk.jagw.ant.InMobiActivity"
             android:label="@string/title_activity_in_mobi"
-            android:parentActivityName="co.uk.jagw.adnetworktester.HomeScreen" >
+            android:parentActivityName="co.uk.jagw.ant.HomeScreen" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="co.uk.jagw.adnetworktester.HomeScreen" />
         </activity>
-        
         <activity
-            android:name="co.uk.jagw.adnetworktester.MoPubActivity"
+            android:name="co.uk.jagw.ant.MoPubActivity"
             android:label="@string/title_activity_mo_pub"
-            android:parentActivityName="co.uk.jagw.adnetworktester.HomeScreen" >
+            android:parentActivityName="co.uk.jagw.ant.HomeScreen" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="co.uk.jagw.adnetworktester.HomeScreen" />
         </activity>
-        
         <activity
             android:name="com.google.ads.AdActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" >
@@ -97,7 +96,34 @@
         <activity
             android:name="com.mopub.mobileads.MraidVideoPlayerActivity"
             android:configChanges="keyboardHidden|orientation" />
-
+        <activity
+            android:name="co.uk.jagw.ant.ChartboostActivity"
+            android:label="@string/title_activity_chartboost"
+            android:parentActivityName="co.uk.jagw.ant.HomeScreen" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="co.uk.jagw.adnetworktester.HomeScreen" />
+        </activity>
+        <activity
+            android:name="com.jirbo.adcolony.AdColonyOverlay"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.jirbo.adcolony.AdColonyFullscreen"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.jirbo.adcolony.AdColonyBrowser"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="co.uk.jagw.ant.AdColonyActivity"
+            android:label="@string/title_activity_ad_colony"
+            android:parentActivityName="co.uk.jagw.ant.HomeScreen" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="co.uk.jagw.ant.HomeScreen" />
+        </activity>
     </application>
 
 </manifest>

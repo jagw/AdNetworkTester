@@ -9,7 +9,9 @@
         <item>Millennial</item>
         <item>InMobi</item>
         <item>AdMob</item>
-        <item >MoPub</item>
+        <item>MoPub</item>
+        <item>Chartboost</item>
+        <item >AdColony</item>
     </string-array>
 
     <string name="title_activity_ad_mob">AdMob</string>
@@ -21,5 +23,7 @@
     <string name="mmInterstitial">Interstitital</string>
     <string name="title_activity_mo_pub">MoPub</string>
     <string name="admob_mediation_button">Mediation</string>
+    <string name="title_activity_chartboost">Chartboost</string>
+    <string name="title_activity_ad_colony">AdColony</string>
 
 </resources>
