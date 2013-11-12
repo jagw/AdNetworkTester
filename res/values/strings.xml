@@ -11,7 +11,8 @@
         <item>AdMob</item>
         <item>MoPub</item>
         <item>Chartboost</item>
-        <item >AdColony</item>
+        <item>AdColony</item>
+        <item >Burstly</item>
     </string-array>
 
     <string name="title_activity_ad_mob">AdMob</string>
@@ -25,5 +26,6 @@
     <string name="admob_mediation_button">Mediation</string>
     <string name="title_activity_chartboost">Chartboost</string>
     <string name="title_activity_ad_colony">AdColony</string>
+    <string name="title_activity_burstly">Burstly</string>
 
 </resources>

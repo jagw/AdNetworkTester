@@ -4,12 +4,13 @@ import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 import android.support.v4.app.NavUtils;
 import android.annotation.TargetApi;
 import android.os.Build;
 import com.jirbo.adcolony.*;
 
-public class AdColonyActivity extends Activity {
+public class AdColonyActivity extends Activity implements AdColonyAdListener {
 	
 	public String adColonyAppID = "app52802a4ae904462291";
 	public String adColonyZoneID = "vz2522446dee0a46a188";
@@ -28,6 +29,8 @@ public class AdColonyActivity extends Activity {
 	
 	public void callAdColony(){
 		AdColonyVideoAd ad = new AdColonyVideoAd(adColonyZoneID);
+		// Implements Ad Listener
+		ad.withListener(this);
 		ad.show();
 	}
 
@@ -77,6 +80,18 @@ public class AdColonyActivity extends Activity {
 	{
 	  super.onResume();
 	  AdColony.resume( this ); 
+	}
+
+	@Override
+	public void onAdColonyAdAttemptFinished(AdColonyAd arg0) {
+		Toast.makeText(this, "AdColony Attempt Finished", Toast.LENGTH_SHORT).show();
+		
+	}
+
+	@Override
+	public void onAdColonyAdStarted(AdColonyAd arg0) {
+		Toast.makeText(this, "AdColony Ad Started", Toast.LENGTH_SHORT).show();
+		
 	}
 
 }
