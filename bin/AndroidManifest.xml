@@ -18,6 +18,7 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 
     <application
         android:allowBackup="true"
@@ -69,6 +70,14 @@
         <activity
             android:name="co.uk.jagw.ant.ChartboostActivity"
             android:label="@string/title_activity_chartboost"
+            android:parentActivityName="co.uk.jagw.ant.HomeScreen" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="co.uk.jagw.adnetworktester.HomeScreen" />
+        </activity>
+         <activity
+            android:name="co.uk.jagw.ant.BurstlyActivity"
+            android:label="@string/title_activity_burstly"
             android:parentActivityName="co.uk.jagw.ant.HomeScreen" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
