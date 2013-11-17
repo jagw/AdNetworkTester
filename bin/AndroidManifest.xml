@@ -26,6 +26,12 @@
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
+
+        <!-- AppLovin configuration -->
+        <meta-data
+            android:name="applovin.sdk.key"
+            android:value="OrmWugyWtIssJTEi_AzDQWLbolZgT_dtqOOi4KDxd4oxc1ebBbqb69BvvlaNlDEZbcGgyUcZTOVAQ8nblaCrlN" />
+        <!-- End AppLovin config -->
         <activity
             android:name="co.uk.jagw.ant.HomeScreen"
             android:label="@string/app_name" >
@@ -75,7 +81,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="co.uk.jagw.adnetworktester.HomeScreen" />
         </activity>
-         <activity
+        <activity
             android:name="co.uk.jagw.ant.BurstlyActivity"
             android:label="@string/title_activity_burstly"
             android:parentActivityName="co.uk.jagw.ant.HomeScreen" >
@@ -103,7 +109,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="co.uk.jagw.ant.HomeScreen" />
         </activity>
-                <activity
+        <activity
             android:name="com.google.ads.AdActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" >
         </activity>
@@ -133,22 +139,30 @@
         <activity
             android:name="com.mopub.mobileads.MraidVideoPlayerActivity"
             android:configChanges="keyboardHidden|orientation" />
-         <!-- Burstly ================================================= -->
-		<activity 
-		    android:name="com.burstly.lib.component.networkcomponent.burstly.BurstlyFullscreenActivity"
-        	android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
-        	android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
-		<!-- Greystripe ============================================== -->
-		<activity 
-		    android:name="com.greystripe.sdk.GSFullscreenActivity"
-        	android:configChanges="keyboard|keyboardHidden|orientation"  />
-		<!-- Jumptap ================================================== -->
-		<activity
-       		android:name="com.burstly.lib.component.networkcomponent.jumptap.JumptapActivity"
-        	android:configChanges="keyboard|keyboardHidden|orientation"
-        	android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
-		
-
+        <!-- Burstly ================================================= -->
+        <activity
+            android:name="com.burstly.lib.component.networkcomponent.burstly.BurstlyFullscreenActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <!-- Greystripe ============================================== -->
+        <activity
+            android:name="com.greystripe.sdk.GSFullscreenActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation" />
+        <!-- Jumptap ================================================== -->
+        <activity
+            android:name="com.burstly.lib.component.networkcomponent.jumptap.JumptapActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <!-- AppLovin -->
+        <activity android:name="com.applovin.adview.AppLovinInterstitialActivity" />
+        <activity
+            android:name="co.uk.jagw.ant.AppLovinActivity"
+            android:label="@string/title_activity_app_lovin"
+            android:parentActivityName="co.uk.jagw.ant.HomeScreen" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="co.uk.jagw.ant.HomeScreen" />
+        </activity>
     </application>
 
 </manifest>

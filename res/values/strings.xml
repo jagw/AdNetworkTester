@@ -12,7 +12,8 @@
         <item>MoPub</item>
         <item>Chartboost</item>
         <item>AdColony</item>
-        <item >Burstly</item>
+        <item>Burstly</item>
+        <item >AppLovin</item>
     </string-array>
 
     <string name="title_activity_ad_mob">AdMob</string>
@@ -27,5 +28,6 @@
     <string name="title_activity_chartboost">Chartboost</string>
     <string name="title_activity_ad_colony">AdColony</string>
     <string name="title_activity_burstly">Burstly</string>
+    <string name="title_activity_app_lovin">AppLovin</string>
 
 </resources>

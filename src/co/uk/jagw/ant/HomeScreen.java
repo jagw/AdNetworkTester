@@ -81,6 +81,10 @@ public class HomeScreen extends Activity implements OnItemSelectedListener {
 			Intent BurstlyIntent = new Intent(this, BurstlyActivity.class);
 			startActivity(BurstlyIntent);
 		}
+		else if(spinnerSelection.equals("AppLovin")){			
+			Intent AppLovinIntent = new Intent(this, AppLovinActivity.class);
+			startActivity(AppLovinIntent);
+		}
 		else {
 			// Should never get here, but if we do - just notify the user to reselect the network
 			Toast.makeText(this, "Error: Please reselect network", Toast.LENGTH_SHORT).show();

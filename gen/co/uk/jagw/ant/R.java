@@ -27,39 +27,43 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int action_settings=0x7f09000c;
+        public static final int action_settings=0x7f09000e;
         public static final int admob_main_layout=0x7f090000;
-        public static final int adview=0x7f09000b;
-        public static final int bannerview=0x7f090002;
+        public static final int adview=0x7f09000d;
+        public static final int applovinActivity=0x7f090002;
+        public static final int bannerview=0x7f090004;
         public static final int button1=0x7f090001;
-        public static final int callMMImage=0x7f090009;
-        public static final int callMMInterstitial=0x7f09000a;
-        public static final int callMMVideo=0x7f090008;
-        public static final int inmobi_main_layout=0x7f090006;
-        public static final int mainLayout=0x7f090003;
-        public static final int millennial_main_layout=0x7f090007;
-        public static final int networkSelect=0x7f090005;
-        public static final int networkSpinner=0x7f090004;
+        public static final int callApplovinInterstitial=0x7f090003;
+        public static final int callMMImage=0x7f09000b;
+        public static final int callMMInterstitial=0x7f09000c;
+        public static final int callMMVideo=0x7f09000a;
+        public static final int inmobi_main_layout=0x7f090008;
+        public static final int mainLayout=0x7f090005;
+        public static final int millennial_main_layout=0x7f090009;
+        public static final int networkSelect=0x7f090007;
+        public static final int networkSpinner=0x7f090006;
     }
     public static final class layout {
         public static final int activity_adcolony=0x7f030000;
         public static final int activity_admob=0x7f030001;
-        public static final int activity_burstly=0x7f030002;
-        public static final int activity_chartboost=0x7f030003;
-        public static final int activity_home_screen=0x7f030004;
-        public static final int activity_in_mobi=0x7f030005;
-        public static final int activity_millennial=0x7f030006;
-        public static final int activity_mopub=0x7f030007;
+        public static final int activity_applovin=0x7f030002;
+        public static final int activity_burstly=0x7f030003;
+        public static final int activity_chartboost=0x7f030004;
+        public static final int activity_home_screen=0x7f030005;
+        public static final int activity_in_mobi=0x7f030006;
+        public static final int activity_millennial=0x7f030007;
+        public static final int activity_mopub=0x7f030008;
     }
     public static final class menu {
         public static final int ad_colony=0x7f080000;
         public static final int ad_mob=0x7f080001;
-        public static final int burstly=0x7f080002;
-        public static final int chartboost=0x7f080003;
-        public static final int home_screen=0x7f080004;
-        public static final int in_mobi=0x7f080005;
-        public static final int millennial=0x7f080006;
-        public static final int mo_pub=0x7f080007;
+        public static final int app_lovin=0x7f080002;
+        public static final int burstly=0x7f080003;
+        public static final int chartboost=0x7f080004;
+        public static final int home_screen=0x7f080005;
+        public static final int in_mobi=0x7f080006;
+        public static final int millennial=0x7f080007;
+        public static final int mo_pub=0x7f080008;
     }
     public static final class string {
         public static final int action_settings=0x7f050001;
@@ -72,6 +76,7 @@ public final class R {
         public static final int network_select_button=0x7f050004;
         public static final int title_activity_ad_colony=0x7f05000d;
         public static final int title_activity_ad_mob=0x7f050003;
+        public static final int title_activity_app_lovin=0x7f05000f;
         public static final int title_activity_burstly=0x7f05000e;
         public static final int title_activity_chartboost=0x7f05000c;
         public static final int title_activity_in_mobi=0x7f050006;
