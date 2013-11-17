@@ -27,9 +27,9 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int action_settings=0x7f09000e;
+        public static final int action_settings=0x7f090010;
         public static final int admob_main_layout=0x7f090000;
-        public static final int adview=0x7f09000d;
+        public static final int adview=0x7f09000f;
         public static final int applovinActivity=0x7f090002;
         public static final int bannerview=0x7f090004;
         public static final int button1=0x7f090001;
@@ -37,9 +37,11 @@ public final class R {
         public static final int callMMImage=0x7f09000b;
         public static final int callMMInterstitial=0x7f09000c;
         public static final int callMMVideo=0x7f09000a;
+        public static final int callMobfoxInterstitial=0x7f09000e;
         public static final int inmobi_main_layout=0x7f090008;
         public static final int mainLayout=0x7f090005;
         public static final int millennial_main_layout=0x7f090009;
+        public static final int mobfoxActivity=0x7f09000d;
         public static final int networkSelect=0x7f090007;
         public static final int networkSpinner=0x7f090006;
     }
@@ -52,7 +54,8 @@ public final class R {
         public static final int activity_home_screen=0x7f030005;
         public static final int activity_in_mobi=0x7f030006;
         public static final int activity_millennial=0x7f030007;
-        public static final int activity_mopub=0x7f030008;
+        public static final int activity_mobfox=0x7f030008;
+        public static final int activity_mopub=0x7f030009;
     }
     public static final class menu {
         public static final int ad_colony=0x7f080000;
@@ -64,6 +67,7 @@ public final class R {
         public static final int in_mobi=0x7f080006;
         public static final int millennial=0x7f080007;
         public static final int mo_pub=0x7f080008;
+        public static final int mob_fox=0x7f080009;
     }
     public static final class string {
         public static final int action_settings=0x7f050001;
@@ -82,6 +86,7 @@ public final class R {
         public static final int title_activity_in_mobi=0x7f050006;
         public static final int title_activity_millennial=0x7f050005;
         public static final int title_activity_mo_pub=0x7f05000a;
+        public static final int title_activity_mob_fox=0x7f050010;
     }
     public static final class style {
         /** 

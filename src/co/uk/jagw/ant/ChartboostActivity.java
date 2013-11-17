@@ -12,6 +12,8 @@ import com.chartboost.sdk.*;
 public class ChartboostActivity extends Activity {
 	
 	private Chartboost chartboost;
+	String chartboostAppID = "528205a416ba47386600002c";
+	String chartboostAppSignature ="bf238f9a4f076c1cfd0cca85cb7cc3b3cc6253f2";
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -26,9 +28,7 @@ public class ChartboostActivity extends Activity {
 	private void callChartboost(){
 		// Configure Chartboost
 		this.chartboost = Chartboost.sharedChartboost();
-		String appId = "528205a416ba47386600002c";
-		String appSignature = "bf238f9a4f076c1cfd0cca85cb7cc3b3cc6253f2";
-		this.chartboost.onCreate(this, appId, appSignature, this.chartBoostDelegate);
+		this.chartboost.onCreate(this, chartboostAppID, chartboostAppSignature, this.chartBoostDelegate);
 
 	}
 

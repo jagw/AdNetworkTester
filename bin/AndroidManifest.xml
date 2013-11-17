@@ -110,6 +110,23 @@
                 android:value="co.uk.jagw.ant.HomeScreen" />
         </activity>
         <activity
+            android:name="co.uk.jagw.ant.AppLovinActivity"
+            android:label="@string/title_activity_app_lovin"
+            android:parentActivityName="co.uk.jagw.ant.HomeScreen" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="co.uk.jagw.ant.HomeScreen" />
+        </activity>
+        <activity
+            android:name="co.uk.jagw.ant.MobFoxActivity"
+            android:label="@string/title_activity_mob_fox"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:parentActivityName="co.uk.jagw.ant.HomeScreen" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="co.uk.jagw.ant.HomeScreen" />
+        </activity>
+        <activity
             android:name="com.google.ads.AdActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" >
         </activity>
@@ -155,14 +172,18 @@
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
         <!-- AppLovin -->
         <activity android:name="com.applovin.adview.AppLovinInterstitialActivity" />
-        <activity
-            android:name="co.uk.jagw.ant.AppLovinActivity"
-            android:label="@string/title_activity_app_lovin"
-            android:parentActivityName="co.uk.jagw.ant.HomeScreen" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="co.uk.jagw.ant.HomeScreen" />
-        </activity>
+		<!-- MobFox -->
+        <activity 
+            android:name="com.adsdk.sdk.banner.InAppWebView"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"/>
+        <activity 
+            android:name="com.adsdk.sdk.mraid.MraidActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"/>
+        <activity 
+            android:name="com.adsdk.sdk.video.RichMediaActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:hardwareAccelerated="false"/>
+       
     </application>
 
 </manifest>

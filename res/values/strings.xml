@@ -13,7 +13,8 @@
         <item>Chartboost</item>
         <item>AdColony</item>
         <item>Burstly</item>
-        <item >AppLovin</item>
+        <item>AppLovin</item>
+        <item >MobFox</item>
     </string-array>
 
     <string name="title_activity_ad_mob">AdMob</string>
@@ -29,5 +30,6 @@
     <string name="title_activity_ad_colony">AdColony</string>
     <string name="title_activity_burstly">Burstly</string>
     <string name="title_activity_app_lovin">AppLovin</string>
+    <string name="title_activity_mob_fox">MobFox</string>
 
 </resources>

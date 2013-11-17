@@ -12,14 +12,12 @@ import android.view.ViewGroup;
 
 import com.applovin.adview.AppLovinAdView;
 import com.applovin.adview.AppLovinInterstitialAd;
-import com.applovin.sdk.AppLovinAd;
-import com.applovin.sdk.AppLovinAdLoadListener;
-import com.applovin.sdk.AppLovinAdService;
 import com.applovin.sdk.AppLovinAdSize;
-import com.applovin.sdk.AppLovinAdUpdateListener;
 import com.applovin.sdk.AppLovinSdk;
 
 public class AppLovinActivity extends Activity {
+	
+	// String applovinID located in the AndroidManifest
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -38,9 +36,9 @@ public class AppLovinActivity extends Activity {
 	public void applovinBanner(){
 		// Create AppLovin Ad View
 		AppLovinSdk sdk = AppLovinSdk.getInstance( this );
-
 		AppLovinAdView adView = new AppLovinAdView(sdk,AppLovinAdSize.BANNER,this);
 		adView.loadNextAd();
+
 
 		// Add the view into the layout
 		ViewGroup adHome = (ViewGroup) findViewById(R.id.applovinActivity);
