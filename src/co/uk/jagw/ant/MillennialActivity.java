@@ -1,5 +1,7 @@
 package co.uk.jagw.ant;
 
+import java.util.HashMap;
+
 import android.annotation.TargetApi;
 import android.app.Activity;
 import android.os.Build;
@@ -13,7 +15,6 @@ import android.view.View;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
 
-import co.uk.jagw.ant.R;
 import com.millennialmedia.android.MMAd;
 import com.millennialmedia.android.MMAdView;
 import com.millennialmedia.android.MMException;
@@ -85,7 +86,12 @@ public class MillennialActivity extends Activity implements RequestListener {
 
 		//Set your metadata in the MMRequest object
 		MMRequest request = new MMRequest();
+		
+		//
 
+		HashMap<String, String>metadata = new HashMap<String,String>();
+		
+		
 		//Add the MMRequest object to your MMAdView.
 		adView.setMMRequest(request);
 		
