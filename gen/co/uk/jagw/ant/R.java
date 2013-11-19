@@ -9,9 +9,89 @@ package co.uk.jagw.ant;
 
 public final class R {
     public static final class array {
-        public static final int networkList=0x7f060000;
+        public static final int networkList=0x7f080000;
     }
     public static final class attr {
+        /** <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int adHeight=0x7f010003;
+        /** <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int adWidth=0x7f010002;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int auto_refresh=0x7f010006;
+        /** <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int auto_refresh_interval=0x7f010005;
+        /** <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int color=0x7f010009;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int expands_to_fit_screen_width=0x7f010008;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int opens_native_browser=0x7f010007;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int placement_id=0x7f010000;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int should_reload_on_resume=0x7f010004;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int test=0x7f010001;
     }
     public static final class dimen {
         /**  Default screen margins, per the Android Design guidelines. 
@@ -20,73 +100,217 @@ public final class R {
          screen margins) for sw720dp devices (e.g. 10" tablets) in landscape here.
     
          */
-        public static final int activity_horizontal_margin=0x7f040000;
-        public static final int activity_vertical_margin=0x7f040001;
+        public static final int activity_horizontal_margin=0x7f070000;
+        public static final int activity_vertical_margin=0x7f070001;
     }
     public static final class drawable {
         public static final int ic_launcher=0x7f020000;
+        public static final int progress=0x7f020001;
     }
     public static final class id {
-        public static final int action_settings=0x7f090010;
-        public static final int admob_main_layout=0x7f090000;
-        public static final int adview=0x7f09000f;
-        public static final int applovinActivity=0x7f090002;
-        public static final int bannerview=0x7f090004;
-        public static final int button1=0x7f090001;
-        public static final int callApplovinInterstitial=0x7f090003;
-        public static final int callMMImage=0x7f09000b;
-        public static final int callMMInterstitial=0x7f09000c;
-        public static final int callMMVideo=0x7f09000a;
-        public static final int callMobfoxInterstitial=0x7f09000e;
-        public static final int inmobi_main_layout=0x7f090008;
-        public static final int mainLayout=0x7f090005;
-        public static final int millennial_main_layout=0x7f090009;
-        public static final int mobfoxActivity=0x7f09000d;
-        public static final int networkSelect=0x7f090007;
-        public static final int networkSpinner=0x7f090006;
+        public static final int action_settings=0x7f0a0018;
+        public static final int admob_main_layout=0x7f0a0000;
+        public static final int adview=0x7f0a0017;
+        public static final int applovinActivity=0x7f0a0002;
+        public static final int appnexusActivity=0x7f0a0004;
+        public static final int appnexusButton=0x7f0a0005;
+        public static final int bannerview=0x7f0a0006;
+        public static final int browser_back=0x7f0a000d;
+        public static final int browser_forward=0x7f0a000e;
+        public static final int browser_refresh=0x7f0a000f;
+        public static final int button1=0x7f0a0001;
+        public static final int callApplovinInterstitial=0x7f0a0003;
+        public static final int callMMImage=0x7f0a0013;
+        public static final int callMMInterstitial=0x7f0a0014;
+        public static final int callMMVideo=0x7f0a0012;
+        public static final int callMobfoxInterstitial=0x7f0a0016;
+        public static final int inmobi_main_layout=0x7f0a0010;
+        public static final int ll=0x7f0a000c;
+        public static final int mainLayout=0x7f0a0007;
+        public static final int millennial_main_layout=0x7f0a0011;
+        public static final int mobfoxActivity=0x7f0a0015;
+        public static final int networkSelect=0x7f0a0009;
+        public static final int networkSpinner=0x7f0a0008;
+        public static final int progress_bar=0x7f0a000a;
+        public static final int web_view=0x7f0a000b;
     }
     public static final class layout {
         public static final int activity_adcolony=0x7f030000;
         public static final int activity_admob=0x7f030001;
         public static final int activity_applovin=0x7f030002;
-        public static final int activity_burstly=0x7f030003;
-        public static final int activity_chartboost=0x7f030004;
-        public static final int activity_home_screen=0x7f030005;
-        public static final int activity_in_mobi=0x7f030006;
-        public static final int activity_millennial=0x7f030007;
-        public static final int activity_mobfox=0x7f030008;
-        public static final int activity_mopub=0x7f030009;
+        public static final int activity_appnexus=0x7f030003;
+        public static final int activity_burstly=0x7f030004;
+        public static final int activity_chartboost=0x7f030005;
+        public static final int activity_home_screen=0x7f030006;
+        public static final int activity_in_app_browser=0x7f030007;
+        public static final int activity_in_mobi=0x7f030008;
+        public static final int activity_millennial=0x7f030009;
+        public static final int activity_mobfox=0x7f03000a;
+        public static final int activity_mopub=0x7f03000b;
     }
     public static final class menu {
-        public static final int ad_colony=0x7f080000;
-        public static final int ad_mob=0x7f080001;
-        public static final int app_lovin=0x7f080002;
-        public static final int burstly=0x7f080003;
-        public static final int chartboost=0x7f080004;
-        public static final int home_screen=0x7f080005;
-        public static final int in_mobi=0x7f080006;
-        public static final int millennial=0x7f080007;
-        public static final int mo_pub=0x7f080008;
-        public static final int mob_fox=0x7f080009;
+        public static final int ad_colony=0x7f090000;
+        public static final int ad_mob=0x7f090001;
+        public static final int app_lovin=0x7f090002;
+        public static final int app_nexus=0x7f090003;
+        public static final int burstly=0x7f090004;
+        public static final int chartboost=0x7f090005;
+        public static final int home_screen=0x7f090006;
+        public static final int in_mobi=0x7f090007;
+        public static final int millennial=0x7f090008;
+        public static final int mo_pub=0x7f090009;
+        public static final int mob_fox=0x7f09000a;
+    }
+    public static final class raw {
+        public static final int mraid=0x7f040000;
+        public static final int mraid_demo=0x7f040001;
+        public static final int test=0x7f040002;
     }
     public static final class string {
-        public static final int action_settings=0x7f050001;
-        public static final int admob_mediation_button=0x7f05000b;
-        public static final int app_name=0x7f050000;
-        public static final int hello_world=0x7f050002;
-        public static final int mmImage=0x7f050008;
-        public static final int mmInterstitial=0x7f050009;
-        public static final int mmVideo=0x7f050007;
-        public static final int network_select_button=0x7f050004;
-        public static final int title_activity_ad_colony=0x7f05000d;
-        public static final int title_activity_ad_mob=0x7f050003;
-        public static final int title_activity_app_lovin=0x7f05000f;
-        public static final int title_activity_burstly=0x7f05000e;
-        public static final int title_activity_chartboost=0x7f05000c;
-        public static final int title_activity_in_mobi=0x7f050006;
-        public static final int title_activity_millennial=0x7f050005;
-        public static final int title_activity_mo_pub=0x7f05000a;
-        public static final int title_activity_mob_fox=0x7f050010;
+        public static final int License=0x7f05007b;
+        public static final int action_settings=0x7f05007f;
+        public static final int admob_mediation_button=0x7f050089;
+        public static final int adsize_too_big=0x7f050022;
+        public static final int already_expanded=0x7f050002;
+        public static final int app_name=0x7f05007a;
+        public static final int appid=0x7f050020;
+        public static final int back=0x7f05007c;
+        public static final int blank_ad=0x7f050051;
+        public static final int cancel_request=0x7f05006e;
+        public static final int class_cast_exception=0x7f050062;
+        public static final int class_not_found_exception=0x7f050061;
+        public static final int console_message=0x7f050053;
+        public static final int conversion_pixel=0x7f050056;
+        public static final int conversion_pixel_delay=0x7f050059;
+        public static final int conversion_pixel_fail=0x7f050058;
+        public static final int conversion_pixel_success=0x7f050057;
+        public static final int create_calendar_event=0x7f050072;
+        public static final int destroy_int=0x7f05004d;
+        public static final int empty_queue=0x7f05004e;
+        public static final int fetch_url=0x7f05000e;
+        public static final int fetcher_start=0x7f050004;
+        public static final int fetcher_start_auto=0x7f050007;
+        public static final int fetcher_start_single=0x7f050005;
+        public static final int fetcher_stopped=0x7f050000;
+        public static final int fire_cb_requester_null=0x7f05006b;
+        public static final int fire_cb_result_null=0x7f05006d;
+        public static final int first_opensdk_launch=0x7f05001d;
+        public static final int forward=0x7f05007d;
+        public static final int found_n_in_xml=0x7f050028;
+        public static final int get_ad_listener=0x7f050047;
+        public static final int get_allowed_sizes=0x7f050049;
+        public static final int get_auto_refresh=0x7f050033;
+        public static final int get_bg=0x7f05004c;
+        public static final int get_height=0x7f05003e;
+        public static final int get_opens_native_browser=0x7f050037;
+        public static final int get_period=0x7f050031;
+        public static final int get_placement_id=0x7f050035;
+        public static final int get_should_resume=0x7f050040;
+        public static final int get_width=0x7f05003d;
+        public static final int handler_message_pass=0x7f050006;
+        public static final int hello_world=0x7f050080;
+        public static final int hidden=0x7f050039;
+        public static final int http_bad_status=0x7f050054;
+        public static final int http_io=0x7f050012;
+        public static final int http_timeout=0x7f050010;
+        public static final int http_unknown=0x7f05000f;
+        public static final int http_unreachable=0x7f050011;
+        public static final int illegal_access_exception=0x7f050060;
+        public static final int init=0x7f05003f;
+        public static final int instance_exception=0x7f050064;
+        public static final int instantiating_class=0x7f050063;
+        public static final int instantiation_exception=0x7f05005f;
+        public static final int js_alert=0x7f050055;
+        public static final int load_ad_int=0x7f050043;
+        public static final int making_adman=0x7f050021;
+        public static final int mediated_no_ads=0x7f05006a;
+        public static final int mediated_owner_null=0x7f050067;
+        public static final int mediated_request=0x7f050065;
+        public static final int mediated_request_error=0x7f050069;
+        public static final int mediated_request_exception=0x7f050068;
+        public static final int mediated_view_null=0x7f050066;
+        public static final int mediation_finish=0x7f050078;
+        public static final int mediation_timeout=0x7f050079;
+        public static final int mmImage=0x7f050086;
+        public static final int mmInterstitial=0x7f050087;
+        public static final int mmVideo=0x7f050085;
+        public static final int moot_restart=0x7f050003;
+        public static final int network_select_button=0x7f050082;
+        public static final int new_ad_since=0x7f05000a;
+        public static final int new_adview=0x7f05001c;
+        public static final int no_connectivity=0x7f05000d;
+        public static final int no_placement_id=0x7f050001;
+        public static final int no_response=0x7f050015;
+        public static final int not_first_opensdk_launch=0x7f05001e;
+        public static final int number_format=0x7f050076;
+        public static final int opening_inapp=0x7f05005a;
+        public static final int opening_native=0x7f05005b;
+        public static final int opening_native_current=0x7f05005c;
+        public static final int opening_url=0x7f05005d;
+        public static final int opening_url_failed=0x7f05005e;
+        public static final int permissions_internet=0x7f050013;
+        public static final int permissions_missing_location=0x7f05000b;
+        public static final int permissions_missing_network_state=0x7f05000c;
+        public static final int placement_id=0x7f050029;
+        public static final int play_vide_no_uri=0x7f050074;
+        public static final int refresh=0x7f05007e;
+        public static final int request_delay_over=0x7f050009;
+        public static final int request_delayed_by_x_ms=0x7f050008;
+        public static final int resize=0x7f050070;
+        public static final int response_blank=0x7f050018;
+        public static final int response_body=0x7f050016;
+        public static final int response_error=0x7f050019;
+        public static final int response_header=0x7f050017;
+        public static final int response_json_error=0x7f05001b;
+        public static final int response_no_ads=0x7f05001a;
+        public static final int result_cb_bad_response=0x7f05006c;
+        public static final int retry_already_cancelled=0x7f05006f;
+        public static final int screen_off_stop=0x7f050024;
+        public static final int screen_on_start=0x7f050025;
+        public static final int set_ad_listener=0x7f050046;
+        public static final int set_allowed_sizes=0x7f05004a;
+        public static final int set_auto_refresh=0x7f050034;
+        public static final int set_bg=0x7f05004b;
+        public static final int set_height=0x7f05003b;
+        public static final int set_height_int=0x7f050045;
+        public static final int set_opens_native_browser=0x7f050038;
+        public static final int set_orientation_properties=0x7f050071;
+        public static final int set_period=0x7f050032;
+        public static final int set_placement_id=0x7f050036;
+        public static final int set_should_resume=0x7f050041;
+        public static final int set_width=0x7f05003c;
+        public static final int set_width_int=0x7f050044;
+        public static final int show_int=0x7f050048;
+        public static final int start=0x7f050026;
+        public static final int stop=0x7f050027;
+        public static final int store_picture_error=0x7f050075;
+        public static final int title_activity_ad_colony=0x7f05008b;
+        public static final int title_activity_ad_mob=0x7f050081;
+        public static final int title_activity_app_lovin=0x7f05008d;
+        public static final int title_activity_app_nexus=0x7f05008f;
+        public static final int title_activity_burstly=0x7f05008c;
+        public static final int title_activity_chartboost=0x7f05008a;
+        public static final int title_activity_in_mobi=0x7f050084;
+        public static final int title_activity_millennial=0x7f050083;
+        public static final int title_activity_mo_pub=0x7f050088;
+        public static final int title_activity_mob_fox=0x7f05008e;
+        public static final int too_old=0x7f05004f;
+        public static final int ua=0x7f05001f;
+        public static final int unhidden=0x7f05003a;
+        public static final int unknown_exception=0x7f050014;
+        public static final int unsupported_encoding=0x7f050073;
+        public static final int using_wxh=0x7f050023;
+        public static final int webclient_error=0x7f050050;
+        public static final int webview_loading=0x7f050042;
+        public static final int webview_received_error=0x7f050052;
+        public static final int xml_ad_height=0x7f050030;
+        public static final int xml_ad_width=0x7f05002f;
+        public static final int xml_set_auto_refresh=0x7f05002c;
+        public static final int xml_set_expands_to_full_screen_width=0x7f050077;
+        public static final int xml_set_opens_native_browser=0x7f05002e;
+        public static final int xml_set_period=0x7f05002a;
+        public static final int xml_set_should_reload=0x7f05002d;
+        public static final int xml_set_test=0x7f05002b;
     }
     public static final class style {
         /** 
@@ -109,11 +333,267 @@ public final class R {
         res/values-v11/styles.xml on API 14+ devices.
     
  API 14 theme customizations can go here. 
+
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    
+
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        
+
+        Base application theme for API 11+. This theme completely replaces
+        AppBaseTheme from res/values/styles.xml on API 11+ devices.
+    
+ API 11 theme customizations can go here. 
+
+        Base application theme for API 14+. This theme completely replaces
+        AppBaseTheme from BOTH res/values/styles.xml and
+        res/values-v11/styles.xml on API 14+ devices.
+    
+ API 14 theme customizations can go here. 
          */
-        public static final int AppBaseTheme=0x7f070000;
+        public static final int AppBaseTheme=0x7f060000;
         /**  Application theme. 
  All customizations that are NOT specific to a particular API-level can go here. 
+ Application theme. 
+ All customizations that are NOT specific to a particular API-level can go here. 
          */
-        public static final int AppTheme=0x7f070001;
+        public static final int AppTheme=0x7f060001;
     }
+    public static final class styleable {
+        /** Attributes that can be used with a BannerAdView.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #BannerAdView_adHeight co.uk.jagw.ant:adHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #BannerAdView_adWidth co.uk.jagw.ant:adWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #BannerAdView_auto_refresh co.uk.jagw.ant:auto_refresh}</code></td><td></td></tr>
+           <tr><td><code>{@link #BannerAdView_auto_refresh_interval co.uk.jagw.ant:auto_refresh_interval}</code></td><td></td></tr>
+           <tr><td><code>{@link #BannerAdView_expands_to_fit_screen_width co.uk.jagw.ant:expands_to_fit_screen_width}</code></td><td></td></tr>
+           <tr><td><code>{@link #BannerAdView_opens_native_browser co.uk.jagw.ant:opens_native_browser}</code></td><td></td></tr>
+           <tr><td><code>{@link #BannerAdView_placement_id co.uk.jagw.ant:placement_id}</code></td><td></td></tr>
+           <tr><td><code>{@link #BannerAdView_should_reload_on_resume co.uk.jagw.ant:should_reload_on_resume}</code></td><td></td></tr>
+           <tr><td><code>{@link #BannerAdView_test co.uk.jagw.ant:test}</code></td><td></td></tr>
+           </table>
+           @see #BannerAdView_adHeight
+           @see #BannerAdView_adWidth
+           @see #BannerAdView_auto_refresh
+           @see #BannerAdView_auto_refresh_interval
+           @see #BannerAdView_expands_to_fit_screen_width
+           @see #BannerAdView_opens_native_browser
+           @see #BannerAdView_placement_id
+           @see #BannerAdView_should_reload_on_resume
+           @see #BannerAdView_test
+         */
+        public static final int[] BannerAdView = {
+            0x7f010000, 0x7f010001, 0x7f010002, 0x7f010003,
+            0x7f010004, 0x7f010005, 0x7f010006, 0x7f010007,
+            0x7f010008
+        };
+        /**
+          <p>This symbol is the offset where the {@link co.uk.jagw.ant.R.attr#adHeight}
+          attribute's value can be found in the {@link #BannerAdView} array.
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name co.uk.jagw.ant:adHeight
+        */
+        public static final int BannerAdView_adHeight = 3;
+        /**
+          <p>This symbol is the offset where the {@link co.uk.jagw.ant.R.attr#adWidth}
+          attribute's value can be found in the {@link #BannerAdView} array.
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name co.uk.jagw.ant:adWidth
+        */
+        public static final int BannerAdView_adWidth = 2;
+        /**
+          <p>This symbol is the offset where the {@link co.uk.jagw.ant.R.attr#auto_refresh}
+          attribute's value can be found in the {@link #BannerAdView} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name co.uk.jagw.ant:auto_refresh
+        */
+        public static final int BannerAdView_auto_refresh = 6;
+        /**
+          <p>This symbol is the offset where the {@link co.uk.jagw.ant.R.attr#auto_refresh_interval}
+          attribute's value can be found in the {@link #BannerAdView} array.
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name co.uk.jagw.ant:auto_refresh_interval
+        */
+        public static final int BannerAdView_auto_refresh_interval = 5;
+        /**
+          <p>This symbol is the offset where the {@link co.uk.jagw.ant.R.attr#expands_to_fit_screen_width}
+          attribute's value can be found in the {@link #BannerAdView} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name co.uk.jagw.ant:expands_to_fit_screen_width
+        */
+        public static final int BannerAdView_expands_to_fit_screen_width = 8;
+        /**
+          <p>This symbol is the offset where the {@link co.uk.jagw.ant.R.attr#opens_native_browser}
+          attribute's value can be found in the {@link #BannerAdView} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name co.uk.jagw.ant:opens_native_browser
+        */
+        public static final int BannerAdView_opens_native_browser = 7;
+        /**
+          <p>This symbol is the offset where the {@link co.uk.jagw.ant.R.attr#placement_id}
+          attribute's value can be found in the {@link #BannerAdView} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name co.uk.jagw.ant:placement_id
+        */
+        public static final int BannerAdView_placement_id = 0;
+        /**
+          <p>This symbol is the offset where the {@link co.uk.jagw.ant.R.attr#should_reload_on_resume}
+          attribute's value can be found in the {@link #BannerAdView} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name co.uk.jagw.ant:should_reload_on_resume
+        */
+        public static final int BannerAdView_should_reload_on_resume = 4;
+        /**
+          <p>This symbol is the offset where the {@link co.uk.jagw.ant.R.attr#test}
+          attribute's value can be found in the {@link #BannerAdView} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name co.uk.jagw.ant:test
+        */
+        public static final int BannerAdView_test = 1;
+        /** Attributes that can be used with a InterstitialAdView.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #InterstitialAdView_color co.uk.jagw.ant:color}</code></td><td></td></tr>
+           <tr><td><code>{@link #InterstitialAdView_opens_native_browser co.uk.jagw.ant:opens_native_browser}</code></td><td></td></tr>
+           <tr><td><code>{@link #InterstitialAdView_placement_id co.uk.jagw.ant:placement_id}</code></td><td></td></tr>
+           <tr><td><code>{@link #InterstitialAdView_test co.uk.jagw.ant:test}</code></td><td></td></tr>
+           </table>
+           @see #InterstitialAdView_color
+           @see #InterstitialAdView_opens_native_browser
+           @see #InterstitialAdView_placement_id
+           @see #InterstitialAdView_test
+         */
+        public static final int[] InterstitialAdView = {
+            0x7f010000, 0x7f010001, 0x7f010007, 0x7f010009
+        };
+        /**
+          <p>This symbol is the offset where the {@link co.uk.jagw.ant.R.attr#color}
+          attribute's value can be found in the {@link #InterstitialAdView} array.
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name co.uk.jagw.ant:color
+        */
+        public static final int InterstitialAdView_color = 3;
+        /**
+          <p>This symbol is the offset where the {@link co.uk.jagw.ant.R.attr#opens_native_browser}
+          attribute's value can be found in the {@link #InterstitialAdView} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name co.uk.jagw.ant:opens_native_browser
+        */
+        public static final int InterstitialAdView_opens_native_browser = 2;
+        /**
+          <p>This symbol is the offset where the {@link co.uk.jagw.ant.R.attr#placement_id}
+          attribute's value can be found in the {@link #InterstitialAdView} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name co.uk.jagw.ant:placement_id
+        */
+        public static final int InterstitialAdView_placement_id = 0;
+        /**
+          <p>This symbol is the offset where the {@link co.uk.jagw.ant.R.attr#test}
+          attribute's value can be found in the {@link #InterstitialAdView} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name co.uk.jagw.ant:test
+        */
+        public static final int InterstitialAdView_test = 1;
+    };
 }
