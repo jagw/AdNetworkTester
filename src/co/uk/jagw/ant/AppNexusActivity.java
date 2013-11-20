@@ -20,8 +20,8 @@ import com.appnexus.opensdk.InterstitialAdView;
 
 public class AppNexusActivity extends Activity implements AdListener {
 
-	String appnexusBannerAPID = "656561";
-	String appnexusInterstitialAPID = "656561";
+	String appnexusBannerAPID = "1398992";
+	String appnexusInterstitialAPID = "1398993";
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
