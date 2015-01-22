@@ -56,6 +56,11 @@ public class HomeScreen extends Activity implements OnItemSelectedListener {
 			startActivity(millennialIntent);
 		}
 		
+		else if(spinnerSelection.equals("Nexage")){
+			Intent nexageIntent = new Intent(this, NexageActivity.class);
+			startActivity(nexageIntent);
+		}
+		
 		else if(spinnerSelection.equals("InMobi")){
 			Intent inmobiIntent = new Intent(this, InMobiActivity.class);
 			startActivity(inmobiIntent);

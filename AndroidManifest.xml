@@ -19,6 +19,12 @@
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    
+    <!--  JESUS NEXAGE PERMISSIONS MRAID! -->
+    <uses-permission android:name="android.permission.WRITE_CALENDAR"/>
+	<uses-permission android:name="android.permission.CALL_PHONE"/>
+	<uses-permission android:name="android.permission.SEND_SMS"/>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -136,6 +142,15 @@
                 android:value="co.uk.jagw.ant.HomeScreen" />
         </activity>
         
+        <activity
+            android:name="co.uk.jagw.ant.NexageActivity"
+            android:label="@string/title_activity_nexage"
+            android:parentActivityName="co.uk.jagw.ant.HomeScreen" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="co.uk.jagw.ant.HomeScreen" />
+        </activity>
+        
         <!-- AdMob ================================================== -->
         <activity
             android:name="com.google.ads.AdActivity"
@@ -202,6 +217,20 @@
             android:name="com.appnexus.opensdk.AdActivity" />
   		<activity 
   		    android:name="com.appnexus.opensdk.BrowserActivity" />
+  		<!-- Nexage =========================================== -->
+  		<meta-data android:name="NEXAGE_MEDIATION_URL"
+				android:value="http://bos.ads0.nexage.com"/>
+  		<meta-data android:name="NEXAGE_DCN" android:value="9993e2e5945d4bbca5f799177f7cacf5"/> 
+  		<activity
+			android:name="org.nexage.sourcekit.mraid.MRAIDBrowser"
+			android:configChanges="orientation|keyboard|keyboardHidden|screenSize"
+			android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+  		
+  		
+  		<meta-data android:name="com.google.android.gms.version"
+			android:value="@integer/google_play_services_version" />
+		<activity android:name="com.google.android.gms.ads.AdActivity"
+			android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"/>
     </application>
 
 </manifest>

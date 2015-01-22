@@ -7,6 +7,7 @@
 
     <string-array name="networkList">
         <item>Millennial</item>
+        <item>Nexage</item>
         <item>InMobi</item>
         <item>AdMob</item>
         <item>MoPub</item>
@@ -15,7 +16,7 @@
         <item>Burstly</item>
         <item>AppLovin</item>
         <item>MobFox</item>
-        <item >AppNexus</item>
+        <item>AppNexus</item>
     </string-array>
 
     <string name="title_activity_ad_mob">AdMob</string>
@@ -33,5 +34,6 @@
     <string name="title_activity_app_lovin">AppLovin</string>
     <string name="title_activity_mob_fox">MobFox</string>
     <string name="title_activity_app_nexus">AppNexus</string>
+    <string name="title_activity_nexage">Nexage</string>
 
 </resources>

@@ -1,0 +1,29 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:nexage="http://schemas.android.com/apk/res/co.uk.jagw.ant"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".NexageActivity" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world" />
+    
+    <com.nexage.android.NexageAdView
+      	android:id="@+id/adView"
+     	android:visibility="visible"
+      	android:layout_width="wrap_content"
+      	android:layout_height="wrap_content"
+      	android:padding="0px"
+      	android:background="#ff000000"
+      	android:layout_alignParentTop="true"
+      	nexage:position="header"
+      	nexage:refreshInterval="30000"
+      	nexage:animation="left_in_right_out" />
+
+</RelativeLayout>

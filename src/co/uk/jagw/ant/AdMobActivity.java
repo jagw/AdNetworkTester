@@ -6,7 +6,6 @@ import android.view.Menu;
 import android.view.View;
 import android.widget.RelativeLayout;
 
-import co.uk.jagw.ant.R;
 import com.google.ads.AdRequest;
 import com.google.ads.AdSize;
 import com.google.ads.AdView;
@@ -42,7 +41,7 @@ public class AdMobActivity extends Activity {
 	    layout.addView(admobAdview);
 
 	    // Initiate a generic request to load it with an ad
-	    admobAdview.loadAd(new AdRequest());
+	    //admobAdview.loadAd(new com.google.ads.AdRequest());
 	}
 	
 	public void admobMediation(View view){
