@@ -6,9 +6,9 @@ import android.view.Menu;
 import android.view.View;
 import android.widget.RelativeLayout;
 
-import com.google.ads.AdRequest;
-import com.google.ads.AdSize;
-import com.google.ads.AdView;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdSize;
+import com.google.android.gms.ads.AdView;
 
 public class AdMobActivity extends Activity {
 	AdView admobAdview;
@@ -31,7 +31,10 @@ public class AdMobActivity extends Activity {
 	
 	public void admobBanner(String apid){
 		// Create the adView
-	    admobAdview = new AdView(this, AdSize.BANNER, apid);
+	    admobAdview = new AdView(this);
+	    admobAdview.setAdUnitId(apid);
+	    admobAdview.setAdSize(AdSize.BANNER);
+	    
 
 	    // Lookup your LinearLayout assuming it's been given
 	    // the attribute android:id="@+id/mainLayout"
@@ -41,7 +44,9 @@ public class AdMobActivity extends Activity {
 	    layout.addView(admobAdview);
 
 	    // Initiate a generic request to load it with an ad
-	    //admobAdview.loadAd(new com.google.ads.AdRequest());
+	    AdRequest request = new AdRequest.Builder().addTestDevice(AdRequest.DEVICE_ID_EMULATOR).build();
+	    
+	    admobAdview.loadAd(request);
 	}
 	
 	public void admobMediation(View view){

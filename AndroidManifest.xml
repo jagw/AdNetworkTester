@@ -151,9 +151,9 @@
                 android:value="co.uk.jagw.ant.HomeScreen" />
         </activity>
         
-        <!-- AdMob ================================================== -->
+        <!-- AdMob =======Google Play Services============================== -->
         <activity
-            android:name="com.google.ads.AdActivity"
+            android:name="com.google.android.gms.ads.AdActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" >
         </activity>
         <!-- Millennial ================================================== -->
@@ -220,7 +220,9 @@
   		<!-- Nexage =========================================== -->
   		<meta-data android:name="NEXAGE_MEDIATION_URL"
 				android:value="http://bos.ads0.nexage.com"/>
-  		<meta-data android:name="NEXAGE_DCN" android:value="9993e2e5945d4bbca5f799177f7cacf5"/> 
+  		<!--  meta-data android:name="NEXAGE_DCN" android:value="9993e2e5945d4bbca5f799177f7cacf5"/-->
+  		<meta-data android:name="NEXAGE_DCN" android:value="1333368108384c64a821a9600fc04a62"/>  
+  		
   		<activity
 			android:name="org.nexage.sourcekit.mraid.MRAIDBrowser"
 			android:configChanges="orientation|keyboard|keyboardHidden|screenSize"
@@ -229,8 +231,6 @@
   		
   		<meta-data android:name="com.google.android.gms.version"
 			android:value="@integer/google_play_services_version" />
-		<activity android:name="com.google.android.gms.ads.AdActivity"
-			android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"/>
     </application>
 
 </manifest>

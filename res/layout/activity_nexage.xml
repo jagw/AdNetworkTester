@@ -7,6 +7,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:id="@+id/nexage_layout"
     tools:context=".NexageActivity" >
 
     <TextView
@@ -14,16 +15,15 @@
         android:layout_height="wrap_content"
         android:text="@string/hello_world" />
     
-    <com.nexage.android.NexageAdView
-      	android:id="@+id/adView"
-     	android:visibility="visible"
-      	android:layout_width="wrap_content"
-      	android:layout_height="wrap_content"
-      	android:padding="0px"
-      	android:background="#ff000000"
-      	android:layout_alignParentTop="true"
-      	nexage:position="header"
-      	nexage:refreshInterval="30000"
-      	nexage:animation="left_in_right_out" />
+<!--     <com.nexage.android.NexageAdView -->
+<!--         android:id="@+id/nexage_ad_view" -->
+<!--         android:layout_width="320dp" -->
+<!--         android:layout_height="50dp" -->
+<!--         android:layout_gravity="center" -->
+<!--         android:background="#fffff0" -->
+<!--         android:visibility="visible" -->
+<!--         nexage:animation="slide_in_out" -->
+<!--         nexage:position="demo-banners" -->
+<!--         nexage:refreshInterval="30000" /> -->
 
 </RelativeLayout>

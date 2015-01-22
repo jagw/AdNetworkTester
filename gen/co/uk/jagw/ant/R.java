@@ -491,7 +491,6 @@ containing a value of this type.
     }
     public static final class id {
         public static final int action_settings=0x7f07002a;
-        public static final int adView=0x7f070029;
         public static final int adjust_height=0x7f070002;
         public static final int adjust_width=0x7f070001;
         public static final int admob_main_layout=0x7f070017;
@@ -524,6 +523,7 @@ containing a value of this type.
         public static final int monochrome=0x7f070016;
         public static final int networkSelect=0x7f070020;
         public static final int networkSpinner=0x7f07001f;
+        public static final int nexage_layout=0x7f070029;
         public static final int none=0x7f070000;
         public static final int normal=0x7f070003;
         public static final int production=0x7f070009;
