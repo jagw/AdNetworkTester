@@ -220,8 +220,17 @@
   		<!-- Nexage =========================================== -->
   		<meta-data android:name="NEXAGE_MEDIATION_URL"
 				android:value="http://bos.ads0.nexage.com"/>
-  		<!--  meta-data android:name="NEXAGE_DCN" android:value="9993e2e5945d4bbca5f799177f7cacf5"/-->
+  		<!-- meta-data android:name="NEXAGE_DCN" android:value="9993e2e5945d4bbca5f799177f7cacf5"/-->
   		<meta-data android:name="NEXAGE_DCN" android:value="1333368108384c64a821a9600fc04a62"/>  
+  		
+  		<!-- NexageActivity definition for Interstitial Ad -->
+			<activity android:name="com.nexage.android.NexageActivity"
+   				android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+   				android:configChanges="orientation|keyboard|keyboardHidden"/>
+			<!-- VAST -->
+			<activity
+					android:name="org.nexage.sourcekit.vast.activity.VASTActivity"
+					android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
   		
   		<activity
 			android:name="org.nexage.sourcekit.mraid.MRAIDBrowser"

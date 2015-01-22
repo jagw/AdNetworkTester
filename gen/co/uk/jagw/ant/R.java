@@ -490,7 +490,7 @@ containing a value of this type.
         public static final int powered_by_google_light=0x7f020020;
     }
     public static final class id {
-        public static final int action_settings=0x7f07002a;
+        public static final int action_settings=0x7f07002b;
         public static final int adjust_height=0x7f070002;
         public static final int adjust_width=0x7f070001;
         public static final int admob_main_layout=0x7f070017;
@@ -509,6 +509,7 @@ containing a value of this type.
         public static final int callMMInterstitial=0x7f070025;
         public static final int callMMVideo=0x7f070023;
         public static final int callMobfoxInterstitial=0x7f070027;
+        public static final int callNexageFullscreen=0x7f07002a;
         public static final int classic=0x7f070014;
         public static final int donate_with_google=0x7f070013;
         public static final int grayscale=0x7f070015;
@@ -570,7 +571,7 @@ containing a value of this type.
     public static final class string {
         public static final int accept=0x7f060002;
         public static final int action_settings=0x7f060024;
-        public static final int admob_mediation_button=0x7f06002e;
+        public static final int admob_mediation_button=0x7f06002f;
         public static final int app_name=0x7f060023;
         /**   Text for notification shown when the Android Wear apps needs to be updated. Only shown on the wearable. [CHAR LIMIT=NONE] 
          */
@@ -679,19 +680,20 @@ containing a value of this type.
         public static final int mmInterstitial=0x7f06002c;
         public static final int mmVideo=0x7f06002a;
         public static final int network_select_button=0x7f060027;
+        public static final int nexageInterstitial=0x7f06002d;
         public static final int store_picture_message=0x7f060001;
         public static final int store_picture_title=0x7f060000;
-        public static final int title_activity_ad_colony=0x7f060030;
+        public static final int title_activity_ad_colony=0x7f060031;
         public static final int title_activity_ad_mob=0x7f060026;
-        public static final int title_activity_app_lovin=0x7f060032;
-        public static final int title_activity_app_nexus=0x7f060034;
-        public static final int title_activity_burstly=0x7f060031;
-        public static final int title_activity_chartboost=0x7f06002f;
+        public static final int title_activity_app_lovin=0x7f060033;
+        public static final int title_activity_app_nexus=0x7f060035;
+        public static final int title_activity_burstly=0x7f060032;
+        public static final int title_activity_chartboost=0x7f060030;
         public static final int title_activity_in_mobi=0x7f060029;
         public static final int title_activity_millennial=0x7f060028;
-        public static final int title_activity_mo_pub=0x7f06002d;
-        public static final int title_activity_mob_fox=0x7f060033;
-        public static final int title_activity_nexage=0x7f060035;
+        public static final int title_activity_mo_pub=0x7f06002e;
+        public static final int title_activity_mob_fox=0x7f060034;
+        public static final int title_activity_nexage=0x7f060036;
         /**  Text on a placeholder buy button when Google Play services is not
          available or up-to-date 
          */
