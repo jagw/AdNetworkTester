@@ -490,11 +490,11 @@ containing a value of this type.
         public static final int powered_by_google_light=0x7f020020;
     }
     public static final class id {
-        public static final int action_settings=0x7f07002b;
+        public static final int action_settings=0x7f07002c;
         public static final int adjust_height=0x7f070002;
         public static final int adjust_width=0x7f070001;
         public static final int admob_main_layout=0x7f070017;
-        public static final int adview=0x7f070028;
+        public static final int adview=0x7f070029;
         public static final int applovinActivity=0x7f070019;
         public static final int appnexusActivity=0x7f07001b;
         public static final int appnexusButton=0x7f07001c;
@@ -505,26 +505,27 @@ containing a value of this type.
         public static final int buy_now=0x7f070011;
         public static final int buy_with_google=0x7f070010;
         public static final int callApplovinInterstitial=0x7f07001a;
-        public static final int callMMImage=0x7f070024;
-        public static final int callMMInterstitial=0x7f070025;
-        public static final int callMMVideo=0x7f070023;
-        public static final int callMobfoxInterstitial=0x7f070027;
-        public static final int callNexageFullscreen=0x7f07002a;
+        public static final int callMMImage=0x7f070025;
+        public static final int callMMInterstitial=0x7f070026;
+        public static final int callMMVideo=0x7f070024;
+        public static final int callMobfoxInterstitial=0x7f070028;
+        public static final int callNexageFullscreen=0x7f07002b;
         public static final int classic=0x7f070014;
         public static final int donate_with_google=0x7f070013;
+        public static final int facebook_main_layout=0x7f07001e;
         public static final int grayscale=0x7f070015;
         public static final int holo_dark=0x7f070007;
         public static final int holo_light=0x7f070008;
         public static final int hybrid=0x7f070006;
-        public static final int inmobi_main_layout=0x7f070021;
-        public static final int mainLayout=0x7f07001e;
+        public static final int inmobi_main_layout=0x7f070022;
+        public static final int mainLayout=0x7f07001f;
         public static final int match_parent=0x7f07000e;
-        public static final int millennial_main_layout=0x7f070022;
-        public static final int mobfoxActivity=0x7f070026;
+        public static final int millennial_main_layout=0x7f070023;
+        public static final int mobfoxActivity=0x7f070027;
         public static final int monochrome=0x7f070016;
-        public static final int networkSelect=0x7f070020;
-        public static final int networkSpinner=0x7f07001f;
-        public static final int nexage_layout=0x7f070029;
+        public static final int networkSelect=0x7f070021;
+        public static final int networkSpinner=0x7f070020;
+        public static final int nexage_layout=0x7f07002a;
         public static final int none=0x7f070000;
         public static final int normal=0x7f070003;
         public static final int production=0x7f070009;
@@ -545,12 +546,13 @@ containing a value of this type.
         public static final int activity_appnexus=0x7f030003;
         public static final int activity_burstly=0x7f030004;
         public static final int activity_chartboost=0x7f030005;
-        public static final int activity_home_screen=0x7f030006;
-        public static final int activity_in_mobi=0x7f030007;
-        public static final int activity_millennial=0x7f030008;
-        public static final int activity_mobfox=0x7f030009;
-        public static final int activity_mopub=0x7f03000a;
-        public static final int activity_nexage=0x7f03000b;
+        public static final int activity_facebook=0x7f030006;
+        public static final int activity_home_screen=0x7f030007;
+        public static final int activity_in_mobi=0x7f030008;
+        public static final int activity_millennial=0x7f030009;
+        public static final int activity_mobfox=0x7f03000a;
+        public static final int activity_mopub=0x7f03000b;
+        public static final int activity_nexage=0x7f03000c;
     }
     public static final class menu {
         public static final int ad_colony=0x7f0c0000;
@@ -559,11 +561,12 @@ containing a value of this type.
         public static final int app_nexus=0x7f0c0003;
         public static final int burstly=0x7f0c0004;
         public static final int chartboost=0x7f0c0005;
-        public static final int home_screen=0x7f0c0006;
-        public static final int in_mobi=0x7f0c0007;
-        public static final int millennial=0x7f0c0008;
-        public static final int mo_pub=0x7f0c0009;
-        public static final int mob_fox=0x7f0c000a;
+        public static final int facebook=0x7f0c0006;
+        public static final int home_screen=0x7f0c0007;
+        public static final int in_mobi=0x7f0c0008;
+        public static final int millennial=0x7f0c0009;
+        public static final int mo_pub=0x7f0c000a;
+        public static final int mob_fox=0x7f0c000b;
     }
     public static final class raw {
         public static final int gtm_analytics=0x7f040000;
@@ -689,6 +692,7 @@ containing a value of this type.
         public static final int title_activity_app_nexus=0x7f060035;
         public static final int title_activity_burstly=0x7f060032;
         public static final int title_activity_chartboost=0x7f060030;
+        public static final int title_activity_facebook=0x7f060037;
         public static final int title_activity_in_mobi=0x7f060029;
         public static final int title_activity_millennial=0x7f060028;
         public static final int title_activity_mo_pub=0x7f06002e;

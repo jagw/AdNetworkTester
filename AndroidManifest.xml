@@ -20,7 +20,7 @@
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     
-    <!--  JESUS NEXAGE PERMISSIONS MRAID! -->
+    <!--  NEXAGE PERMISSIONS MRAID! -->
     <uses-permission android:name="android.permission.WRITE_CALENDAR"/>
 	<uses-permission android:name="android.permission.CALL_PHONE"/>
 	<uses-permission android:name="android.permission.SEND_SMS"/>
@@ -150,6 +150,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="co.uk.jagw.ant.HomeScreen" />
         </activity>
+        <activity
+            android:name="co.uk.jagw.ant.FacebookActivity"
+            android:label="@string/title_activity_facebook"
+            android:parentActivityName="co.uk.jagw.ant.HomeScreen" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="co.uk.jagw.adnetworktester.HomeScreen" />
+        </activity>
         
         <!-- AdMob =======Google Play Services============================== -->
         <activity
@@ -217,6 +225,9 @@
             android:name="com.appnexus.opensdk.AdActivity" />
   		<activity 
   		    android:name="com.appnexus.opensdk.BrowserActivity" />
+  		<!--  Facebook ================================================= -->
+		<activity android:name="com.facebook.ads.InterstitialAdActivity"
+                  android:configChanges="keyboardHidden|orientation|screenSize" />
   		<!-- Nexage =========================================== -->
   		<meta-data android:name="NEXAGE_MEDIATION_URL"
 				android:value="http://bos.ads0.nexage.com"/>

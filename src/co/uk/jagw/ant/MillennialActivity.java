@@ -89,9 +89,9 @@ public class MillennialActivity extends Activity implements RequestListener {
 		
 		//
 
-		HashMap<String, String>metadata = new HashMap<String,String>();
-		metadata.put("acid", "1954776");
-		request.setMetaValues(metadata);
+		//HashMap<String, String>metadata = new HashMap<String,String>();
+		//metadata.put("acid", "1954776");
+		//request.setMetaValues(metadata);
 		
 		
 		//Add the MMRequest object to your MMAdView.
